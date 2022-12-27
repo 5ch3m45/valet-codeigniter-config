@@ -46,15 +46,15 @@ class CodeIgniterValetDriver extends ValetDriver
      */
     public function frontControllerPath($sitePath, $siteName, $uri)
     {
-        if(preg_match('/sociabuzz/', $sitePath.$uri) && preg_match('/\\\creator/', $sitePath.$uri)) {
+        if(preg_match('/sociabuzz/', $sitePath.$uri) && preg_match('/creator/', $sitePath.$uri)) {
             return $sitePath.'/creator/index.php';
-        } else if(preg_match('/sociabuzz/', $sitePath.$uri) && preg_match('/\\\payment/', $sitePath.$uri)) {
+        } else if(preg_match('/sociabuzz/', $sitePath.$uri) && preg_match('/payment/', $sitePath.$uri)) {
             return $sitePath.'/payment/index.php';
-        } else if(preg_match('/sociabuzz/', $sitePath.$uri) && preg_match('/\\\proaccount/', $sitePath.$uri)) {
+        } else if(preg_match('/sociabuzz/', $sitePath.$uri) && preg_match('/proaccount/', $sitePath.$uri)) {
             return $sitePath.'/proaccount/index.php';
-        } else if(preg_match('/sociabuzz/', $sitePath.$uri) && preg_match('/\\\pro/', $sitePath.$uri)) {
+        } else if(preg_match('/sociabuzz/', $sitePath.$uri) && preg_match('/pro/', $sitePath.$uri)) {
             return $sitePath.'/pro/index.php';
-        } else if(preg_match('/sociabuzz/', $sitePath.$uri) && preg_match('/\\\assets/', $sitePath.$uri)) {
+        } else if(preg_match('/sociabuzz/', $sitePath.$uri) && preg_match('/assets/', $sitePath.$uri)) {
             return $sitePath.'/assets/';
         } else {
             return $sitePath.'/index.php';
