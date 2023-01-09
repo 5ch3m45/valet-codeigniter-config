@@ -54,6 +54,8 @@ class CodeIgniterValetDriver extends ValetDriver
             return $sitePath.'/proaccount/index.php';
         } else if(preg_match('/sociabuzz/', $sitePath.$uri) && preg_match('/pro\//', $sitePath.$uri)) {
             return $sitePath.'/pro/index.php';
+        } else if(preg_match('/pinjambarang/', $sitePath.$uri)) {
+            return $sitePath.'/public/index.php';
         } else {
             return $sitePath.'/index.php';
         }
